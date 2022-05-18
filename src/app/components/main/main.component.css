@@ -1,0 +1,30 @@
+h1{text-align: center;
+margin: 25px;}
+
+.img-logo{
+    
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 500px;
+        height: auto;
+      }
+    #Outer{
+      font-family: 'Open Sans',Arial,sans-serif;
+      font-size: 14px;
+      line-height: 20px;
+      -webkit-text-size-adjust: none;
+      margin: 0;
+      padding: 0;
+      text-align: center;
+    }
+    #Ipsum{
+        font-family: 'Open Sans',Arial,sans-serif;
+        font-size: 12px;
+        line-height: 20px;
+        -webkit-text-size-adjust: none;
+        text-align: center;
+        padding: 0;
+        margin: 0 auto;
+        width: 320px;
+    }
