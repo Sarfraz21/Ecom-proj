@@ -32,7 +32,7 @@
             ],
             "styles": [
               "./node_modules/@angular/material/prebuilt-themes/indigo-pink.css",
-              "src/styles.css"
+              "src/styles.sass"
             ],
             "scripts": []
           },
@@ -118,6 +118,11 @@
           "builder": "angular-cli-ghpages:deploy"
         }
       }
+    }
+  },
+  "schematics": {
+    "@schematics/angular:component": {
+      "style": "sass"
     }
   },
   "defaultProject": "Ecom-proj"
