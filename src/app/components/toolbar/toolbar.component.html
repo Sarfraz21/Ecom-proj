@@ -1,3 +1,50 @@
-<div class="toolbar">
-    Sarfraz21 ECom-proj
-</div>
+<mat-toolbar class="toolbar">
+ 
+    <!--Menu-->
+    <button mat-icon-button [matMenuTriggerFor]="menu" aria-label="icon-button-menu">
+        <mat-icon>more_vert</mat-icon>
+    </button>
+    <mat-menu #menu="matMenu">
+        <button mat-menu-item>
+            <mat-icon>search</mat-icon>
+            <span>Search</span>
+        </button>
+        <button mat-menu-item disabled>
+            <mat-icon>fingerprint</mat-icon>
+            <span>ID</span>
+        </button>
+        <button mat-menu-item>
+            <mat-icon>notifications</mat-icon>
+            <span>Reminders</span>
+        </button>
+        <button mat-menu-item>
+            <mat-icon>edit_note</mat-icon>
+            <span>Share Your Journey</span>
+        </button>
+        <button mat-menu-item>
+            <mat-icon>group</mat-icon>
+            <span>My group</span>
+        </button>
+    
+    <button mat-menu-item [matMenuTriggerFor]="Team">
+        <mat-icon>expand_circle_down</mat-icon>
+        <span>Team info</span>
+        </button>
+    <mat-menu #Team="matMenu">
+        
+        <button mat-menu-item routerLink="/team1" routerLinkActive="active">Knight Of Her Majesty Sir Safraz</button>
+        <button mat-menu-item routerLink="/team2" routerLinkActive="active">Knight Of Her Majesty Sir Dare</button>
+        <button mat-menu-item routerLink="/team3" routerLinkActive="active">Knight Of Her Majesty Sir John</button>
+    </mat-menu>
+    </mat-menu>
+    
+    
+    <!-- Toolbar-->
+            
+    <span class="spacer"></span>
+    <mat-icon>rocket_launch</mat-icon>
+    <span class="title" [routerLink]="['/']">App Launcher</span>
+    <span class="title2" [routerLink]="['/']">Software House</span>
+    <span class="spacer"></span>
+    <mat-icon>account_circle</mat-icon>
+    </mat-toolbar>
